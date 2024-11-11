@@ -1,0 +1,114 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.list-product {
+  width: 100%;
+  max-width: 1200px;  /* Maximum width for large screens */
+  margin: 0 auto;     /* Centers the container */
+  padding: 20px;      /* Add padding for better spacing */
+}
+
+/* Header styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Products heading */
+.listproduct-format-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Product list container */
+.listproduct-allproducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  /* Distribute items evenly */
+  gap: 20px;  /* Space between products */
+}
+
+/* Product card layout */
+.listproduct-format-main.list-product-format {
+  width: 30%; /* Set width for each product card */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center content in the card */
+}
+
+/* Product image */
+.listproduct-product-icon {
+  width: 100%;
+  max-width: 200px;  /* Limit max width of images */
+  height: auto;
+  object-fit: cover;  /* Ensures image covers the space proportionally */
+}
+
+/* Remove icon */
+.listproduct-remove-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 10px;  /* Space between image and remove icon */
+}
+
+/* Horizontal line between product items */
+hr {
+  width: 100%;
+  border: 0.5px solid #ccc;
+}
+
+/* Media queries */
+
+/* For larger screens, such as tablets or desktops */
+@media (min-width: 768px) {
+  .listproduct-format-main {
+    font-size: 1.2rem;  /* Larger font size for better readability */
+  }
+
+  .listproduct-format-main.list-product-format {
+    width: 30%;  /* 3 items per row */
+  }
+}
+
+/* For smaller screens, such as phones or small tablets */
+@media (max-width: 767px) {
+  .list-product {
+    padding: 10px;  /* Less padding on small screens */
+  }
+
+  .listproduct-format-main {
+    font-size: 1rem;  /* Smaller font size for mobile */
+  }
+
+  .listproduct-format-main.list-product-format {
+    width: 100%;  /* 1 item per row */
+    padding: 15px;
+  }
+
+  .listproduct-product-icon {
+    width: 100%;
+    max-width: 150px;  /* Reduce max image width on mobile */
+  }
+}
+
+/* Fullscreen height for some devices (optional) */
+.list-product {
+  height: 100vh; /* Use full height of viewport */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+
+
+  

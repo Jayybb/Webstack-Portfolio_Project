@@ -1,0 +1,74 @@
+/* RelatedProducts.css */
+
+.relatedproducts {
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #f8f8f8; /* Light background to differentiate from main content */
+  border-radius: 8px;
+}
+
+.relatedproducts h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+}
+
+.relatedproducts hr {
+  margin: 10px 0;
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.relatedproducts-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.collection-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.collection-item:hover {
+  transform: translateY(-5px);
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.collection-item p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.collection-item p:first-of-type {
+  font-weight: bold;
+  color: #333;
+}
+
+.collection-item p:nth-of-type(2) {
+  color: #ff5733; /* New price color */
+  font-weight: bold;
+}
+
+.collection-item p:nth-of-type(3) {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.85rem;
+}
+
+
+  

@@ -1,0 +1,15 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.breadcrum a {
+    color: #007BFF; /* Change this to your preferred link color */
+    text-decoration: none;
+    margin: 0 5px; /* Add some space between links */
+}
+
+.breadcrum img {
+    margin: 0 5px; /* Space around arrow icons */
+}

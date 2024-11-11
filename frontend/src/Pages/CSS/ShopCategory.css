@@ -1,0 +1,133 @@
+/* ShopCategory.css */
+
+.shop-category {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Banner Section */
+.shopcategory-banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Sorting and Index Section */
+.shopcategory-indexSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shopcategory-indexSort p {
+  font-size: 14px;
+  color: #333;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.shopcategory-sort img {
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Products Section */
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Product Item Card */
+.shopcategory-products .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shopcategory-products .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shopcategory-products .item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.shopcategory-products .item .item-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.shopcategory-products .item .item-price {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.shopcategory-products .item .item-new-price {
+  font-size: 16px;
+  color: #e63946;
+}
+
+/* Load More Button */
+.shopcategory-loadmore {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .shopcategory-products {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .shopcategory-indexSort {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .shopcategory-sort {
+    margin-top: 10px;
+  }
+
+  .shopcategory-loadmore {
+    width: 100%;
+  }
+}
+
+  

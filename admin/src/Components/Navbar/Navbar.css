@@ -1,0 +1,118 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #4b6cb7, #182848); /* Dark gradient */
+  padding: 10px 20px;
+  color: white;
+  height: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Navbar logo */
+.nav-logo {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar profile icon */
+.nav-profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-profile:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Fancy hover animation for navbar links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #ffafbd; /* Soft pink underline on hover */
+}
+
+/* Navbar glow effect */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ffafbd, #ffc3a0, #2193b0, #6dd5ed); /* Soft, glowing gradient */
+  z-index: -1;
+  filter: blur(12px);
+  border-radius: 10px;
+  opacity: 0.6;
+  animation: gradientAnimation 6s infinite alternate;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    height: 60px;
+  }
+
+  .nav-logo {
+    height: 40px;
+  }
+
+  .nav-profile {
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+}
