@@ -1,0 +1,83 @@
+/* Base styles for RelatedProducts component */
+.relatedproducts {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.relatedproducts h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.relatedproducts hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for product items */
+.relatedproducts-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Image styling */
+.item img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;  /* Limit the maximum width of the image */
+  margin: 0 auto;  /* Center the image horizontally */
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .relatedproducts h1 {
+    font-size: 1.8rem;  /* Smaller heading size for mobile */
+  }
+
+  .relatedproducts-item {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the grid for smaller screens */
+    gap: 15px;
+  }
+
+  .item img {
+    max-width: 150px;  /* Smaller image size for mobile */
+  }
+}
+
+/* Tablet to small desktop (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .relatedproducts h1 {
+    font-size: 2rem;  /* Slightly smaller heading for medium screens */
+  }
+
+  .relatedproducts-item {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
+
+  .item img {
+    max-width: 180px;  /* Adjust image size for tablets */
+  }
+}
+
+/* Desktop and larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .relatedproducts h1 {
+    font-size: 2.5rem;  /* Larger heading for larger screens */
+  }
+
+  .relatedproducts-item {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
+  }
+
+  .item img {
+    max-width: 200px;  /* Adjust image size for desktop */
+  }
+}
+

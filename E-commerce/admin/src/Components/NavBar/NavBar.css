@@ -1,0 +1,59 @@
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Logo and profile image sizes for larger screens */
+.nav-logo {
+  height: 40px;
+}
+
+.nav-profile {
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Media query for tablet and smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    height: 35px;  /* Slightly smaller logo on smaller screens */
+  }
+
+  .nav-profile {
+    height: 30px;  /* Smaller profile picture */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    height: 30px;  /* Further reduce logo size */
+  }
+
+  .nav-profile {
+    height: 25px;  /* Smaller profile picture */
+    margin-top: 10px;  /* Add some space below the logo */
+  }
+}

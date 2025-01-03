@@ -1,0 +1,125 @@
+/* Offers.css */
+
+/* General styles for the Offers section */
+.offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .offers-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .offers-left h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .offers-left h1:first-child {
+    color: #28a745; /* Green color for 'Exclusive' */
+  }
+  
+  .offers-left p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .offers-left button {
+    padding: 12px 25px;
+    background-color: #a72868;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .offers-left button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .offers-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .offers-right img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (mobile phones) */
+  @media only screen and (max-width: 600px) {
+    .offers {
+      flex-direction: column; /* Stack the left and right sections */
+      text-align: center;
+    }
+  
+    .offers-left h1 {
+      font-size: 2rem; /* Adjust header size for mobile */
+    }
+  
+    .offers-left p {
+      font-size: 1rem; /* Adjust paragraph size */
+    }
+  
+    .offers-left button {
+      font-size: 1rem;
+      padding: 10px 15px; /* Adjust button padding for mobile */
+    }
+  
+    .offers-right img {
+      max-width: 300px; /* Resize image for mobile */
+      margin-top: 20px;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 768px) {
+    .offers-left h1 {
+      font-size: 2.4rem; /* Slightly smaller header size for tablets */
+    }
+  
+    .offers-left button {
+      font-size: 1.1rem;
+      padding: 10px 20px;
+    }
+  
+    .offers-right img {
+      max-width: 350px; /* Adjust the image size for tablets */
+    }
+  }
+  
+  /* Large devices (desktop) */
+  @media only screen and (min-width: 1024px) {
+    .offers-left h1 {
+      font-size: 3rem; /* Larger header size for desktops */
+    }
+  
+    .offers-left p {
+      font-size: 1.3rem; /* Larger paragraph text on desktop */
+    }
+  
+    .offers-left button {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+    }
+  
+    .offers-right img {
+      max-width: 450px; /* Slightly larger image on desktop */
+    }
+  }
+  

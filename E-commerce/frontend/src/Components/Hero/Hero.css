@@ -1,0 +1,136 @@
+
+/* General Styling for Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hand-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hand-hand-icon p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hero-latest-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero-latest-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.hero-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left {
+    margin-bottom: 70px;
+  }
+
+  .hero-left h2 {
+    font-size: 7rem;
+  }
+
+  .hand-hand-icon {
+    flex-direction: column;
+  }
+
+  .hero-latest-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-right img {
+    width: 80%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .hand-hand-icon {
+    gap: 8px;
+  }
+
+  .hero-latest-btn {
+    padding: 12px;
+    justify-content: center;
+  }
+
+  .hero-right img {
+    width: 90%;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .hero-left h2 {
+    font-size: 2rem;
+  }
+
+  .hero-latest-btn {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .hero-right img {
+    width: 105%;
+  }
+}

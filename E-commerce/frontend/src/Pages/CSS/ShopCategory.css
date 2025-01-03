@@ -1,0 +1,119 @@
+/* General Shop Category Styles */
+.shopcategory {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shopcategory img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.shopcategory-indexSort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shopcategory-indexSort p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.shopcategory-indexSort span {
+  font-weight: bold;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.shopcategory-sort img {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust the number of columns based on screen width */
+  gap: 20px;
+}
+
+.shopcategory-loadmore {
+  text-align: center;
+  padding: 12px 25px;
+  background-color: #3f22ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #0847e6;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .shopcategory {
+    padding: 15px;
+  }
+
+  .shopcategory-indexSort {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .shopcategory-sort {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .shopcategory-sort img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .shopcategory-products {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* More products per row on smaller screens */
+    gap: 15px;
+  }
+
+  .shopcategory-loadmore {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 480px) {
+  .shopcategory {
+    padding: 10px;
+  }
+
+  .shopcategory-sort {
+    font-size: 0.8rem;
+    justify-content: flex-start;
+  }
+
+  .shopcategory-sort img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .shopcategory-loadmore {
+    font-size: 0.9rem;
+  }
+}

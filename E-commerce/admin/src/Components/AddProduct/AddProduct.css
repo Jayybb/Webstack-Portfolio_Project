@@ -1,0 +1,140 @@
+
+  /* ============================ Base Styles ============================ */
+
+/* Main container for the Add Product page */
+.addproduct {
+  padding: 20px; /* Reduced padding */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Reduced max-width */
+  margin: 40px auto; /* Slightly smaller margin */
+  overflow: auto;  /* Allow scrolling if content overflows */
+}
+
+/* Title */
+.addproduct h1 {
+  text-align: center;
+  margin-bottom: 20px; /* Reduced margin */
+  font-size: 22px; /* Slightly smaller font size */
+  color: #333;
+}
+
+/* ============================ Form Field Styles ============================ */
+
+/* Section for individual fields (input fields and labels) */
+.addproduct-itemfield {
+  margin-bottom: 15px; /* Reduced space between fields */
+}
+
+.addproduct-itemfield p {
+  font-size: 14px; /* Smaller font size */
+  font-weight: 500;
+  margin-bottom: 6px; /* Reduced margin */
+  color: #333;
+}
+
+/* Input field and select styling */
+.addproduct-itemfield input,
+.addproduct-itemfield select {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  font-size: 13px; /* Smaller font size */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Focused state for input and select elements */
+.addproduct-itemfield input:focus,
+.addproduct-itemfield select:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 86, 179, 0.5);
+}
+
+/* Label styling */
+.addproduct-itemfield label {
+  display: block;
+  cursor: pointer;
+  margin-top: 8px; /* Reduced margin */
+}
+
+/* ============================ Price Section Styles ============================ */
+
+/* Styling for the price section (for Price and Offer Price) */
+.addproduct-price {
+  display: flex;
+  gap: 15px; /* Reduced gap between price fields */
+  justify-content: space-between;
+}
+
+/* ============================ Image Upload Styles ============================ */
+
+/* Styling for upload area (thumbnail image) */
+.addproduct-thumbnail-img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* ============================ Button Styles ============================ */
+
+/* Button Styling */
+.addproduct-btn {
+  width: 100%;
+  padding: 12px; /* Reduced padding */
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for the button */
+.addproduct-btn:hover {
+  background-color: #004085;
+}
+
+/* ============================ Responsive Design ============================ */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .addproduct {
+    padding: 15px; /* Reduced padding for tablet screens */
+  }
+
+  .addproduct-price {
+    flex-direction: column; /* Stack price fields vertically */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .addproduct {
+    padding: 12px; /* Reduced padding for mobile screens */
+  }
+
+  .addproduct-itemfield input,
+  .addproduct-itemfield select {
+    font-size: 12px; /* Smaller font size for inputs */
+  }
+
+  .addproduct-btn {
+    font-size: 13px; /* Smaller font size for the button */
+  }
+
+  .addproduct-price {
+    flex-direction: column; /* Stack price fields vertically */
+  }
+}
+
+/* ============================ Global Body and HTML Styles ============================ */
+
+/* Ensure scrolling works for the body */
+html, body {
+  height: 100%;
+  overflow: auto; /* Allow scrolling */
+}

@@ -1,0 +1,107 @@
+/* DescriptionBox.css */
+
+.descriptionbox {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .descriptionbox-navigator {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .descriptionbox-nav-box {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .descriptionbox-nav-box:hover {
+    color: #007BFF;
+  }
+  
+  .descriptionbox-nav-box-fade {
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .descriptionbox-nav-box-fade:hover {
+    color: #007BFF;
+  }
+  
+  .descriptionbox-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .descriptionbox-description p {
+    margin-bottom: 20px;
+  }
+  
+  /* Active tab styles */
+  .descriptionbox-nav-box.active,
+  .descriptionbox-nav-box-fade.active {
+    font-weight: 700;
+    color: #007BFF;
+    border-bottom: 3px solid #007BFF;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet view */
+  @media (max-width: 768px) {
+    .descriptionbox {
+      padding: 15px;
+    }
+  
+    .descriptionbox-navigator {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .descriptionbox-nav-box,
+    .descriptionbox-nav-box-fade {
+      font-size: 16px;
+      padding: 8px 0;
+    }
+  
+    .descriptionbox-description {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 480px) {
+    .descriptionbox {
+      padding: 10px;
+    }
+  
+    .descriptionbox-navigator {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .descriptionbox-nav-box,
+    .descriptionbox-nav-box-fade {
+      font-size: 14px;
+      padding: 6px 0;
+    }
+  
+    .descriptionbox-description {
+      font-size: 14px;
+    }
+  }
+  

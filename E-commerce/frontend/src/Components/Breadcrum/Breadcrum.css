@@ -1,0 +1,45 @@
+
+.breadcrum {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #333;  
+    display: flex;  /* Flexbox to align items horizontally */
+    align-items: center;  
+    margin-top: 20px;  /* Top margin */
+    margin-bottom: 20px;  /* Bottom margin */
+  }
+  
+  
+  .breadcrum img {
+    width: 12px;  /* Set the width of the arrow icon */
+    height: auto;  /* Keep the aspect ratio of the image */
+    margin: 0 8px;  /* Space between the arrows and the text */
+  }
+  
+  /* Style for the text in the breadcrumb */
+  .breadcrum span {
+    font-weight: bold;  /* Make the text bold */
+  }
+  
+  /* Hover effect for the breadcrumb text */
+  .breadcrum a {
+    text-decoration: none;  /* Remove underline */
+    color: #333;  /* Text color */
+  }
+  
+  .breadcrum a:hover {
+    color: #007BFF;  /* Color on hover */
+    text-decoration: underline;  /* Underline text on hover */
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .breadcrum {
+      font-size: 14px;  /* Slightly smaller font size on mobile */
+    }
+  
+    .breadcrum img {
+      width: 10px;  /* Smaller arrow icons on mobile */
+    }
+  }
+  

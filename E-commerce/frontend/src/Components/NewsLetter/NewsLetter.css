@@ -1,0 +1,131 @@
+/* NewsLetter.css */
+
+/* Main container styling for the newsletter section */
+.newsletter {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  /* Input and Button container */
+  .newsletter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+  }
+  
+  /* Styling for the email input */
+  .newsletter input[type='email'] {
+    padding: 12px 20px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .newsletter input[type='email']:focus {
+    border-color: #28a745; /* Green border on focus */
+  }
+  
+  /* Styling for the subscribe button */
+  .newsletter button {
+    padding: 12px 20px;
+    background-color: #99186a;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (mobile phones) */
+  @media only screen and (max-width: 600px) {
+    .newsletter h1 {
+      font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+  
+    .newsletter p {
+      font-size: 1rem; /* Smaller paragraph text for mobile */
+    }
+  
+    .newsletter div {
+      flex-direction: column; /* Stack input and button vertically on mobile */
+    }
+  
+    .newsletter input[type='email'] {
+      max-width: 100%;
+    }
+  
+    .newsletter button {
+      width: 100%;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 768px) {
+    .newsletter h1 {
+      font-size: 2rem; /* Slightly smaller header for tablets */
+    }
+  
+    .newsletter p {
+      font-size: 1.1rem; /* Adjust paragraph size */
+    }
+  
+    .newsletter div {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .newsletter input[type='email'] {
+      max-width: 300px;
+    }
+  
+    .newsletter button {
+      max-width: 200px;
+    }
+  }
+  
+  /* Large devices (desktop) */
+  @media only screen and (min-width: 1024px) {
+    .newsletter h1 {
+      font-size: 2.5rem; /* Larger header size for desktops */
+    }
+  
+    .newsletter p {
+      font-size: 1.2rem;
+    }
+  
+    .newsletter input[type='email'] {
+      max-width: 350px;
+    }
+  
+    .newsletter button {
+      max-width: 200px;
+    }
+  }
+  

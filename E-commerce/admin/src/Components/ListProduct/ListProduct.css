@@ -1,0 +1,110 @@
+/* ListProduct.css */
+
+/* General styles for the ListProduct component */
+.listproduct {
+  font-family: Arial, sans-serif;
+  margin-left: 270px; /* Adjust for the width of the sidebar */
+  margin-top: 60px; /* Adjust for the height of the navbar */
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Smooth transition for sidebar toggle */
+  background-color: #f9f9f9; /* Light background for the product list */
+  min-height: calc(100vh - 60px); /* Full height minus navbar height */
+}
+
+/* Title of the product list */
+h1 {
+  text-align: left; /* Left-align the title */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Header row with product details */
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr 2fr 2fr 0.5fr; /* Adjusted column widths */
+  gap: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.listproduct-format-main p {
+  margin: 0;
+  text-align: left; /* Ensure header text is left-aligned */
+}
+
+/* Products section */
+.listproduct-allproducts {
+  margin-top: 20px;
+}
+
+/* Product items grid */
+.listproduct-format {
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr 2fr 2fr 0.5fr; /* Adjusted column widths */
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.listproduct-format p {
+  margin: 0;
+  text-align: left; /* Ensure product text is left-aligned */
+}
+
+.listproduct-format img.listproduct-product-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.listproduct-remove-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.listproduct-remove-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Add some responsiveness for mobile views */
+@media (max-width: 768px) {
+  .listproduct {
+    margin-left: 200px; /* Adjust for smaller sidebar on mobile */
+    margin-top: 50px; /* Adjust for navbar on smaller screens */
+  }
+
+  .listproduct-format-main {
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    text-align: left; /* Left-align text on smaller screens */
+  }
+
+  .listproduct-format {
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr; /* Adjust grid layout for smaller screens */
+  }
+
+  .listproduct-format img.listproduct-product-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .listproduct-remove-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Optional: For smaller screens where the sidebar collapses, adjust layout */
+@media (max-width: 480px) {
+  .listproduct {
+    margin-left: 70px; /* Adjust for collapsed sidebar */
+    margin-top: 50px; /* Adjust for navbar on very small screens */
+  }
+}
+
+
+
